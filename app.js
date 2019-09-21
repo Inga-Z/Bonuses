@@ -4,12 +4,9 @@ const purchaseAmount = 1000;
 const availableBonuses = 100;
 
 const maxBonuses = purchaseAmount * 0.5;
-let apliteBonuses;
-if (maxBonuses <= availableBonuses){
-    apliteBonuses = maxBonuses;
-} else {
-    apliteBonuses = availableBonuses;
-}
+
+const apliteBonuses = maxBonuses <= availableBonuses ? maxBonuses :availableBonuses;
+
 console.log(apliteBonuses);
 
 const total = purchaseAmount - apliteBonuses;
